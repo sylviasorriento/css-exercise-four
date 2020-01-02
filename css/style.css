@@ -1,4 +1,134 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 1%; /* 20px auto; */
+  width: 100%
+}
+
+/* added */
+.container > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 20px;
+}
+
+/* .emphasis {
+  text-align: center;
+  font-family: serif;
+} */
+
+
+.title {
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+div {
+  float: left;
+  margin: 1% 0;
+  padding: 20px 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 575px) {
+  div {
+    margin: 1%;
+    width: auto;
+  }
+}
+
+.baku-pic {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+@media screen and (min width 575px){
+  div {
+    width: 48%;
+    height: 48%;
+    background-color: #fafafa;
+  }
+  .preview-baku {
+    background-image: url("/images/baku.jpg");
+    background-size: cover;
+    height: auto;
+    width: auto;
+    margin: auto;
+  }
+}
+.london-pic {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min width 575px){
+  div {
+    width: 48%;
+    height: 48%;
+    background-color: #fafafa;
+  }
+  .preview-london {
+    background-image: url("/images/london.png");
+  /*  background-size: cover; */
+    height: 300px;
+    width: 48%;
+    margin: auto;
+    position: relative;
+  }
+}
+
+.london {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.madrid-pic {
+  width: 200px;
+  height: 200px;
+}
+@media screen and (min width 575px){
+  div {
+    width: 48%;
+    height: 48%;
+    background-color: #fafafa;
+  }
+  .preview-madrid {
+    background-image: url("/images/madrid.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 48%;
+    margin: auto;
+  }
+}
+
+.rome-pic {
+  width: 200px;
+  height: 200px;
+}
+@media screen and (min width 575px){
+  div {
+    width: 48%;
+    height: 48%;
+    background-color: #fafafa;
+  }
+  .preview-rome {
+    background-image: url("/images/rome.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 48%;
+    margin: auto;
+  }
 }
